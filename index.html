@@ -1,176 +1,51 @@
+
+
 <!DOCTYPE html>
-
-<!--
-color: #27292b; grey
-color: #faf0e6; white
-color: #fffff0; white-soft
-color: #ffcbbb; peach
--->
-
 <html lang="ru">
-  
-  <head>
-
+<head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 7</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=8EKqQ3BURz_Nn0R9wgHJjUCUYqc7hirLmCa6Xu_XPjCg0wuTihVN5qbZJhSUT-9KvsIYABzQrDeoJamR4vWzLg" charset="UTF-8"></script><script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+</head>
 
-    <title>DZ_7</title>
-
-    <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/nav.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/table.css">
-
-    <style>
-      body{
-       background-color: #27292b;
-      }
-    </style>
-    <style>
-      @media screen and (min-width: 980px) /* Desktop */ {
-        #in-aside-wrapper {
-        flex-direction: row;
-        display: flex;
-        }
-        #in-aside-wrapper main, #in-aside-wrapper aside, #in-aside-wrapper fin {
-        background-color: #ddd;
-        margin: 10px;
-        padding: 10px;
-        }
-        #in-aside-wrapper aside {
-        flex: 1;
-        order: 1;
-        }
-        #in-aside-wrapper main {
-        flex: 1;
-        order: 2;
-        }
-        #in-aside-wrapper fin {
-        flex: 1;
-        order: 2;
-        }
-      }
-      @media screen and (max-width: 500px) /* Mobile */ {
-        #in-aside-wrapper {
-        flex-direction: column;
-        display: flex;
-        }
-        #in-aside-wrapper main, #in-aside-wrapper aside, #in-aside-wrapper fin {
-        background-color: #ddd;
-        margin: 10px;
-        padding: 10px;
-        max-width: 100px;
-        }
-        #in-aside-wrapper aside {
-        flex: 1;
-        order: 1;
-        }
-        #in-aside-wrapper main {
-        flex: 1;
-        order: 3;
-        }
-        #in-aside-wrapper fin {
-        flex: 1;
-        order: 2;
-        }
-      }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Задани 7 </title>
-   <meta name="viewport" content="width=width-device, initial-scale=1" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
-    <title>Gallery</title>
-    <style>
-      .gallery {
-        max-width: 900px;
-        margin: 0 auto;
-      }
-      .slider {
-        width: 100%;
-      }
-      .slide img {
-        width: 100%;
-      }
-      .pager {
-        text-align: center;
-        margin-top: 10px;
-      }
-    </style>
-
-  </head>
-
-  <!--heading-->
-  <body style="margin:0;"> 
-
-    <div p class="headbox">
-     
-      <img style="float:left; margin:10px; width:100px; height:100px;" img src="234.jpg"  />
-        
-        <div 
-          style="margin:5px; padding: 20px;"> <h1>dz 7</h1>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img class="header-logo" src="234.jpg" alt="Lamborghini">
+            <h1 class="header-title">DZ_7</h1>
         </div>
-      </p>
+    </header>
+<div class="gallery">
+    <div>
+        <img alt="" src="1.jpg" width="300" height="300">
     </div>
-  
-    
-  </body>
-
-  <div id="main-aside-wrapper">
-    <navig>
-      <body>
-        <div class="gallery">
-          <div class="slider">
-            <div class="slide"><img src="62.jpg" alt="Image 1"></div>
-            <div class="slide"><img src="67fd80d9e243.jpg" alt="Image 2"></div>
-            <div class="slide"><img src="599010f9bedcc531520c4f14.jpg" alt="Image 3"></div>
-            <div class="slide"><img src="ddt-mir-nomer-nol.jpg" alt="Image 4"></div>
-            <div class="slide"><img src="f373e6ac51ec4f1b76d8b509acf97e60.jpg" alt="Image 5"></div>
-            <div class="slide"><img src="https___images.genius.com_fe12a0fbd17fa6c6111016af0931cbc8.1000x1000x1.png" alt="Image 6"></div>
-            <div class="slide"><img src="scale_1200.jpg" alt="Image 7"></div>
-            <div class="slide"><img src="wPm9T7AOcQ8.jpg" alt="Image 8"></div>
-          </div>
-          <div class="pager"></div>
-        </div>
-      </body>
-    </navig>
-  </div>
-
-
-    
-   
-  <!--footer-->
-  <body>
-    <div t class="footerMain"> 
-      <!-- этот блок, как положено блочному элементу по умолчанию, займет всю оставшуюся ширину родительского элемента -->
-      <div>
-        <h3>Рыдзелев</h3>
-      </div>
-    </t>
+    <div>
+        <img alt="" src="2.jpg" width="300" height="300">
     </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-    });
-  </script>
+    <div>
+        <img alt="" src="3.jpg" width="300" height="300">
+    </div>
+    <div>
+        <img alt="" src="4.jpg" width="300" height="300">
+    </div>
+    <div>
+        <img alt="" src="5.jpg" width="300" height="300">
+    </div>
+    <div>
+        <img alt="" src="6.png" width="300" height="300">
+    </div>
+    <div>
+        <img alt="" src="7.jpg" width="300" height="300">
+    </div>
+    <div>
+        <img alt="" src="8.jpg" width="300" height="300">
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
